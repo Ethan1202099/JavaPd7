@@ -30,4 +30,23 @@ double harmonic(int N){
   }
   return sum;
 }
+
+double sine(int N, double x){
+    double sum= 0;
+    int sign= 1;
+    for(int i= 1; i< 2*N; i+=2){
+      sum += sign * Math.pow(x,i);
+      sign = -1;
+    }
+    return sum;
+}
+
+double sine2(int N, double x){
+    double sum= 0;
+    for(int i=0; i<=N;i++){
+      sum+= (Math.pow(-1,i)*Math.pow(x,2*i+1))/fact(2*i+1);
+    }
+    return sum;
+  }
+
 }
