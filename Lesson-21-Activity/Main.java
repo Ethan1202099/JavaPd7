@@ -10,14 +10,10 @@ class Main {
   void init(){
     
   }
-
-    void allowance(double target){
-        double amount = 0.01;
-        int days = 1;
-
-    while(amount < target){
-        amount = amount * 2;
-        days++;
+  
+  int x=1;
+  while( ! (500<Math.pow(2,x)) ){ 
+    x++;
     }
 
     void addTwoNumbers(){
