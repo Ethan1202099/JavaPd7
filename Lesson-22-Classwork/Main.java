@@ -7,14 +7,17 @@ class Main {
 
   void init(){
 
-    string[] ArrayList = {"Bob". "Andrew", "John", "Allison", "Alice"};
+    String[] ArrayList = {"Bob". "Andrew", "John", "Allison", "Alice"};
      
   }
 
-    function celsiusToFarhenheit(){
-          
+  double[] convert(double[] temp){
 
+    double[] farhen = new double[temp.length];
+    for(int x=0; x<=temp.length-1; x++){
+      farhen[x] = celciusToFarhenheit(temp[x]);
     }
+  }
   double celsiusToFarhenheit(double c){
         return c*9/5+32;
   }
